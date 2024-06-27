@@ -1,0 +1,10 @@
+pandas
+requests
+gspread
+oauth2client
+jinja2
+weasyprint
+pango 
+cairo 
+gdk-pixbuf 
+libffi
