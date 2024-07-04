@@ -1,0 +1,531 @@
+/* css/estilo.css */
+
+/* index.html */
+
+.index-nav{
+    background-color: yellow;
+    padding: 6rem 0;
+}
+
+.index-nav h2{
+    margin-top:0;
+}
+
+footer .indice {
+    background: black;
+    padding: 6rem;
+}
+
+/* Gerais */
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.25rem;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+    page-break-before: always; /* Adiciona uma quebra de página antes de cada h2 */
+    text-transform: uppercase;
+}
+
+h3 {
+    color: #365778;
+    font-size: 2.5rem;
+    margin-top: 5rem;
+    margin-bottom: 1.25rem;
+}
+
+h4 {
+    color: #f9a43f;
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+}
+
+h5 {
+    font-size: 2rem;
+}
+
+p, ul li {
+    page-break-inside: avoid; /* Evita quebra de página dentro de um parágrafo */
+    font-weight: 200;
+}
+
+/* Estilo para navegação */
+
+.navbar {
+    padding: 3rem 0;
+}
+
+.navbar .container{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+/* Estilo para a seção Hero */
+.hero {
+    position: relative;
+    color: white;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: multiply; /* Efeito de multiplicação */
+}
+
+.hero.hero-esg {
+    background: url('../../../../assets/img/forest_bg.jpg') no-repeat center center/cover;
+}
+
+.hero.hero-esg::before{
+    background-color: rgba(0, 0, 0, 0.3); /* Cor preta com opacidade para o efeito de overlay */
+}
+
+.hero.hero-ods {
+    background: url('../../../../assets/img/onu_bg.jpg') no-repeat center center/cover;
+}
+
+.hero.hero-ods::before{
+    background-color: rgba(0, 0, 0, 0.6); /* Cor preta com opacidade para o efeito de overlay */
+}
+
+.hero.hero-certificacoes {
+    background: url('../../../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
+}
+
+.hero.hero-certificacoes::before{
+    background-color: rgba(0, 0, 0, 0.3); /* Cor preta com opacidade para o efeito de overlay */
+}
+
+.hero.hero-gee{
+    background: url('../../../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
+}
+
+.hero.hero-gee::before{
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade para o efeito de overlay */
+}
+
+.hero.hero-relatorios{
+    background-color:#365778;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.hero .lead {
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.hero .company-name {
+    color: #f9a43f;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+.indice-relatorios{
+    padding: 6rem 0 12rem;
+    background-color: #eee;
+}
+
+.indice-relatorios h2{
+    margin-top:0;
+}
+
+i.fa-tree{
+    color: green;
+}
+
+i.fa-industry{
+    color: brown;
+}
+
+/* SEÇÃO SIMB */
+
+/* Estilo para a seção SIMB */
+#simb {
+    padding: 40px 0;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+#simb .row{
+    padding-top:2rem;
+}
+
+#simb .esg-letters{
+    font-size: 8rem;
+    font-weight: bolder;
+    line-height: 1.0;
+}
+
+/* Garantir que as imagens dos cards mantenham a proporção 4:3 */
+.card-img-top {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Para navegadores que suportam */
+}
+
+/* Ajustes de espaçamento e tamanho de texto */
+#simb .card-body {
+    flex: 1 1 auto;
+    padding: 2rem;
+}
+
+#EGG .card-body {
+    flex: 1 1 auto;
+    padding: 2rem;
+    border: 1px solid #cccccc
+}
+
+.card-text {
+    font-size: 1rem; /* Ajusta o tamanho do texto para melhor legibilidade */
+}
+
+/* Estilo para a seção de indicadores detalhados */
+#indicadores-detalhados {
+    margin: 2rem 0;
+    /* background-color: #f8f9fa; Fundo claro para a seção */
+}
+
+.indicador-card {
+    background-color: #ffffff; /* Fundo branco para cada coluna */
+    border-radius: 0.5rem; /* Bordas arredondadas */
+    padding: 2rem; /* Padding uniforme */
+}
+
+.indicador-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.indicador-card ul {
+    list-style-type: none; /* Remove o marcador da lista */
+    padding-left: 0;
+}
+
+.indicador-card ul li {
+    font-size: 1rem;
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+.indicador-card ul li::before {
+    content: "\2022"; /* Ponto de lista */
+    position: absolute;
+    left: 0;
+    color: #28a745; /* Cor verde */
+    font-weight: bold; /* Negrito */
+}
+
+/* SEÇÃO RELATÓRIO */
+
+#relatorio {
+    padding: 4rem 0;
+    background-color: white; /* Cor de fundo clara */
+}
+
+#relatorio .row{
+    padding-top:2rem;
+}
+
+#relatorio .company-name{
+    color: #f9a43f;
+    font-size: 4rem;
+    font-weight: lighter;
+}
+
+/* Estilo para a seção de desempenho */
+
+#desempenho .card {
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    padding: 2rem 1.5rem;
+}
+
+#desempenho .card-body h1 {
+    font-size: 6rem;
+    font-weight: bold;
+    margin-bottom: 2rem 0;
+}
+
+#desempenho .card-body p {
+    font-size: 1.25rem;
+}
+
+.emissao-carbono .card-body h1{
+    font-size: 3rem;
+    font-weight: 900;
+    color: black;
+}
+
+/* Estilo para a faixa de maturidade */
+
+#faixas-maturidade {
+    padding-bottom: 2rem;
+}
+
+#faixas-maturidade p.description {
+    margin-bottom: 2rem;
+}
+
+.faixa-maturidade.faixa-padrao {
+    background-color: #f1f1f1; /* Cor de fundo padrão */
+    margin-left: 1rem;
+}
+
+.faixa-maturidade.faixa-atual {
+    border: 2px solid black;
+}
+
+.faixa-maturidade.faixa-atual.iniciante {
+    background-color: #f8d7da; /* Cor de fundo para faixa iniciante */
+}
+
+.faixa-maturidade.faixa-atual.em-desenvolvimento {
+    background-color: #fff3cd; /* Cor de fundo para faixa em desenvolvimento */
+}
+
+.faixa-maturidade.faixa-atual.engajada {
+    background-color: #d1ecf1; /* Cor de fundo para faixa engajada */
+}
+
+.faixa-maturidade.faixa-atual.sustentavel {
+    background-color: #d4edda; /* Cor de fundo para faixa sustentável */
+}
+
+.faixa-maturidade.faixa-atual.referencia {
+    background-color: #c3e6cb; /* Cor de fundo para faixa referência */
+}
+
+#faixas-maturidade h3 {
+    margin: 2rem 0;
+}
+
+.faixa-maturidade h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* SEÇÃO DE DIMENSÕES E TEMAS */
+
+.chart-container {
+    position: relative;
+    margin-right: 40px;
+}
+
+.dimensoes-esg{
+    margin-top: 3rem;
+}
+
+.dimensoes-esg h3, .dimensoes-esg h4{
+    margin-bottom: 1rem;
+}
+
+.dimensoes-esg h4{
+    margin-top: 2rem;
+}
+
+.dimensoes-esg h6{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2rem 0 0.5rem;
+}
+
+.respostas-detalhes .dimensoes-esg ul li{
+    margin-bottom: 1rem;
+}
+
+
+/* ODS */
+.thermometer-container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente se necessário */
+    height: 100%;
+}
+
+.thermometer {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 20px;
+    position: relative;
+    margin: 0 10px; /* Adicione alguma margem lateral, se necessário */
+}
+
+.thermometer-bar {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.ods-respostas p, .agenda-2030 p{
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ods-images {
+    margin-bottom: 2rem;
+}
+
+/* Estilo para lista de certificações */
+
+.respostas {
+    background-color: #efefef;
+    margin-top: 6rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.respostas .container{
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.respostas .container, .respostas-detalhes.container {
+    padding: 3rem;
+}
+
+.respostas .container h2{
+    margin-top: 1rem;
+}
+
+.respostas-destaque p.info{
+    margin-bottom: 2rem;
+}
+
+.respostas-destaque.container{
+    border-bottom: 4px dotted #cecece;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.respostas-detalhes.container{
+    margin-top: 0;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.respostas-detalhes h3 {
+    margin-top: 0;
+}
+
+.respostas-detalhes ul{
+    list-style-type: none; /* Remove o marcador da lista */
+    padding-left: 0;
+}
+
+.respostas-detalhes ul li {
+    margin-bottom: 0;
+    display: flex; /* Usa flexbox para alinhar os ícones e o texto */
+    align-items: flex-start; /* Alinha os itens ao topo */
+}
+
+.respostas-detalhes ul li i {
+    line-height: 1.5;
+    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+}
+
+.respostas-detalhes ul li span {
+    flex: 1; /* Permite que o texto ocupe o espaço restante */
+    text-align: left; /* Garante que o texto fique alinhado à esquerda */
+    word-wrap: break-word; /* Quebra o texto longo para evitar overflow */
+}
+
+p.certificacoes-perguntas {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 2rem 0 0.5rem;
+}
+
+/* Estilo para as tabelas */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+.table-secondary {
+    background-color: #d3d3d3;
+}
+
+.table-light {
+    background-color: #f0f0f0;
+}
+
+/* Estilo para o relatório */
+.container {
+    margin-top: 20px;
+}
+
+.border {
+    border: 1px solid #dee2e6;
+    padding: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+
+/* Estilos para impressão */
+@page {
+    size: A4;
+    margin: 20mm;
+}
+
+@page :first {
+    margin-top: 40mm;
+}
+
+@media print {
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+    }
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+    table, pre {
+        page-break-inside: avoid;
+    }
+}
