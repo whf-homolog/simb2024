@@ -11,9 +11,11 @@
     margin-top:0;
 }
 
-.footer-indice {
-    background: black;
+.footer-index {
     padding: 6rem;
+    background: black;
+    margin-top: 6rem;
+    color: #cccccc;
 }
 
 /* Gerais */
