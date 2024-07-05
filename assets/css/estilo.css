@@ -92,7 +92,7 @@ p, ul li {
 }
 
 .hero.hero-esg {
-    background: url('../../../../assets/img/forest_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/forest_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-esg::before{
@@ -100,7 +100,7 @@ p, ul li {
 }
 
 .hero.hero-ods {
-    background: url('../../../../assets/img/onu_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/onu_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-ods::before{
@@ -108,7 +108,7 @@ p, ul li {
 }
 
 .hero.hero-certificacoes {
-    background: url('../../../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-certificacoes::before{
@@ -116,7 +116,7 @@ p, ul li {
 }
 
 .hero.hero-gee{
-    background: url('../../../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
+    background: url('../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
 }
 
 .hero.hero-gee::before{
