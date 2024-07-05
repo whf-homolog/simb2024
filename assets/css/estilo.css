@@ -19,8 +19,12 @@
 }
 
 .footer-index.mini{
-    padding: 1rem;
+    padding: 1rem 0 3rem;
     font-size: 1rem;
+}
+
+.footer-index a{
+    color:#ccc;
 }
 
 /* Gerais */
