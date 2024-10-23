@@ -1,33 +1,6 @@
-/* css/estilo.css */
-
-/* index.html */
-
-.index-nav{
-    background-color: yellow;
-    padding: 6rem 0;
-}
-
-.index-nav h2{
-    margin-top:0;
-}
-
-.footer-index {
-    padding: 6rem;
-    background: black;
-    margin-top: 6rem;
-    color: #cccccc;
-}
-
-.footer-index.mini{
-    padding: 1rem 0 3rem;
-    font-size: 1rem;
-}
-
-.footer-index a{
-    color:#ccc;
-}
-
-/* Gerais */
+/* ==========================
+   Estilos Gerais
+   ========================== */
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -35,8 +8,9 @@ body {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     font-weight: 900;
+    letter-spacing: -3px;
     margin-top: 6rem;
     margin-bottom: 1.5rem;
     page-break-before: always; /* Adiciona uma quebra de página antes de cada h2 */
@@ -45,14 +19,17 @@ h2 {
 
 h3 {
     color: #365778;
-    font-size: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -3px;
     margin-top: 5rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 2rem;
 }
 
 h4 {
-    color: #f9a43f;
     font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -2px;
     margin-top: 4rem;
     margin-bottom: 1rem;
 }
@@ -66,28 +43,151 @@ p, ul li {
     font-weight: 200;
 }
 
-/* Estilo para navegação */
-
-.navbar {
-    padding: 3rem 0;
+.voltar-indice{
+    padding: 1rem;
+    background-color: #eeeeee;
 }
 
-.navbar .container{
+.voltar-indice a{
+    color:#212529;
+    font-size:1rem;
+}
+
+h5.relatorio-indice {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.progress-bar.bg-warning{
+    background-color: #f9a43f !important;
+}
+
+.dash h3 {
+    padding-top: 3rem
+}
+
+.dash h4 {
+    margin-top: 0;
+}
+
+.dash h6 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-top: 3rem
+}
+
+.dash .card {
+    margin-bottom: 2rem;
+}
+
+/* Ajustes de Responsividade para Estilos Gerais */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 3rem;
+        margin-top: 2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        margin-top: 1rem; 
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        letter-spacing: -1px;
+        margin-top: 2rem;
+    }
+
+    h5 {
+        font-size: 1.5rem; 
+
+    }
+
+    p, ul li {
+        font-size: 1.25rem; 
+    }
+
+    h5.relatorio-indice {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes adicionais para dispositivos muito pequenos */
+    h2 {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+        letter-spacing: -1px;
+        margin-top: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.75rem;
+        letter-spacing: -1px;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+        letter-spacing: -1px;
+    }
+
+    p, ul li {
+        font-size: 1rem;
+    }
+}
+
+
+/* ==========================
+   Estilos de Navegação
+   ========================== */
+
+.navbar {
+    padding: 3rem 0; /* Mantém o padding para desktop */
+}
+
+.navbar .container {
     margin-bottom: 0;
     margin-top: 0;
 }
 
+/* Ajustes de Responsividade para NAVBAR */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1.5rem 0; /* Reduz o padding para dispositivos menores */
+    }
 
-/* Estilo para a seção Hero */
+    .navbar-brand img {
+        max-height: 40px; /* Ajusta a altura máxima do logotipo */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
+
+@media (max-width: 576px) {
+    .navbar-brand img {
+        max-height: 40px; /* Ajusta a altura máxima do logotipo para telas menores */
+        height: auto;
+        margin-left: 15px;
+    }
+}
+
+
+/* ==========================
+   Seção Hero
+   ========================== */
+
 .hero {
     position: relative;
     color: white;
-    height: 35rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
     overflow: hidden;
+    padding: 6rem 0;
 }
 
 .hero::before {
@@ -97,19 +197,19 @@ p, ul li {
     left: 0;
     width: 100%;
     height: 100%;
-    mix-blend-mode: multiply; /* Efeito de multiplicação */
+    mix-blend-mode: multiply;
 }
 
 .hero.hero-esg {
-    background: url('../../assets/img/forest_bg.jpg') no-repeat center center/cover;
+    background: url('../../../../assets/img/forest_bg.jpg') no-repeat center center/cover;
 }
 
-.hero.hero-esg::before{
-    background-color: rgba(0, 0, 0, 0.3); /* Cor preta com opacidade para o efeito de overlay */
+.hero.hero-esg::before {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero.hero-ods {
-    background: url('../../assets/img/onu_bg.jpg') no-repeat center center/cover;
+    background: url('../../../../assets/img/onu_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-ods::before{
@@ -117,7 +217,7 @@ p, ul li {
 }
 
 .hero.hero-certificacoes {
-    background: url('../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
+    background: url('../../../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-certificacoes::before{
@@ -125,7 +225,7 @@ p, ul li {
 }
 
 .hero.hero-gee{
-    background: url('../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
+    background: url('../../../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
 }
 
 .hero.hero-gee::before{
@@ -133,7 +233,19 @@ p, ul li {
 }
 
 .hero.hero-relatorios{
-    background-color:#365778;
+    background: url('../../../../assets/img/index_bg.jpg') no-repeat center center/cover;
+}
+
+.hero.hero-relatorios::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero.hero-dashboard{
+    background: url('../../../../assets/img/dashboard_bg.jpg') no-repeat center center/cover;
+}
+
+.hero.hero-dashboard::before {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .hero .container {
@@ -143,66 +255,108 @@ p, ul li {
 }
 
 .hero h1 {
-    font-size: 6rem;
+    font-size: 6rem; /* Tamanho grande para desktop */
     font-weight: bold;
     line-height: 1;
 }
 
 .hero .lead {
-    font-size: 1.25rem;
+    font-size: 1.25rem; /* Tamanho para subtítulo no desktop */
     font-weight: normal;
 }
 
 .hero .company-name {
     color: #f9a43f;
-    font-size: 4rem;
+    font-size: 4rem; /* Tamanho grande para desktop */
     font-weight: lighter;
 }
 
-.indice-relatorios{
-    padding: 6rem 0 12rem;
-    background-color: #eee;
+/* Ajustes de Responsividade para HERO */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 0; /* Reduz o padding para economizar espaço */
+    }
+
+    .hero .company-name {
+        font-size: 3rem; /* Reduz o tamanho da fonte para o nome da empresa */
+    }
+
+    .hero h1 {
+        font-size: 4rem; /* Reduz o tamanho da fonte para o título */
+    }
+
+    .hero .lead {
+        font-size: 1.25rem; /* Reduz o tamanho da fonte para subtítulo */
+    }
 }
 
-.indice-relatorios h2{
-    margin-top:0;
+@media (max-width: 576px) {
+    .hero {
+        padding: 2.5rem 0; /* Reduz o padding para economizar espaço */
+    }
+
+    .hero .company-name {
+        font-size: 1.5rem; /* Ajusta o tamanho da fonte para o nome da empresa */
+    }
+
+    .hero h1 {
+        font-size: 2.5rem; /* Ajusta ainda mais o tamanho da fonte para o título */
+    }
+
+    .hero .lead {
+        font-size: 1rem; /* Ajusta o tamanho da fonte para subtítulo */
+    }
+
 }
 
-i.fa-tree{
-    color: green;
+/* ==========================
+   Seção Índice
+   ========================== */
+
+.index-nav {
+    background-color: yellow;
+    padding: 6rem 0;
 }
 
-i.fa-industry{
-    color: brown;
+.index-nav h2 {
+    margin-top: 0;
 }
 
-/* SEÇÃO SIMB */
+footer .indice {
+    background: black;
+    padding: 6rem;
+}
 
-/* Estilo para a seção SIMB */
+footer img {
+    max-width: 100%;
+}
+
+/* ==========================
+   Seção SIMB
+   ========================== */
+
 #simb {
     padding: 40px 0;
-    background-color: #f8f9fa; /* Cor de fundo clara */
+    background-color: #f8f9fa;
 }
 
-#simb .row{
-    padding-top:2rem;
+#simb .row {
+    padding-top: 2rem;
 }
 
-#simb .esg-letters{
+#simb .esg-letters {
     font-size: 8rem;
     font-weight: bolder;
     line-height: 1.0;
 }
 
-/* Garantir que as imagens dos cards mantenham a proporção 4:3 */
 .card-img-top {
     object-fit: cover;
     width: 100%;
     height: auto;
-    aspect-ratio: 4 / 3; /* Para navegadores que suportam */
+    aspect-ratio: 4 / 3;
 }
 
-/* Ajustes de espaçamento e tamanho de texto */
 #simb .card-body {
     flex: 1 1 auto;
     padding: 2rem;
@@ -211,23 +365,42 @@ i.fa-industry{
 #EGG .card-body {
     flex: 1 1 auto;
     padding: 2rem;
-    border: 1px solid #cccccc
+    border: 1px solid #cccccc;
 }
 
 .card-text {
-    font-size: 1rem; /* Ajusta o tamanho do texto para melhor legibilidade */
+    font-size: 1rem;
 }
 
-/* Estilo para a seção de indicadores detalhados */
+@media (max-width: 768px){
+    #simb .esg-letters {
+        font-size: 6rem;
+        font-weight: bolder;
+        line-height: 1.0;
+    }
+}
+
+@media (max-width: 576px) {
+    #simb .esg-letters {
+        font-size: 4rem;
+        font-weight: bolder;
+        line-height: 1.0;
+    }
+}
+
+/* ==========================
+   Seção Indicadores Detalhados
+   ========================== */
+
 #indicadores-detalhados {
     margin: 2rem 0;
-    /* background-color: #f8f9fa; Fundo claro para a seção */
 }
 
 .indicador-card {
-    background-color: #ffffff; /* Fundo branco para cada coluna */
-    border-radius: 0.5rem; /* Bordas arredondadas */
-    padding: 2rem; /* Padding uniforme */
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    border: 1px solid #ccc;
 }
 
 .indicador-card h5 {
@@ -236,7 +409,7 @@ i.fa-industry{
 }
 
 .indicador-card ul {
-    list-style-type: none; /* Remove o marcador da lista */
+    list-style-type: none;
     padding-left: 0;
 }
 
@@ -248,55 +421,105 @@ i.fa-industry{
 }
 
 .indicador-card ul li::before {
-    content: "\2022"; /* Ponto de lista */
+    content: "\2022";
     position: absolute;
     left: 0;
-    color: #28a745; /* Cor verde */
-    font-weight: bold; /* Negrito */
+    color: #28a745;
+    font-weight: bold;
 }
 
-/* SEÇÃO RELATÓRIO */
+@media (max-width: 768px){
+    .indicador-card h5 {
+        font-size: 1.5rem;
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 576px) {
+    .indicador-card h5 {
+        font-size: 1.25rem;
+        margin-bottom: 10px;
+    }
+}
+
+/* ==========================
+   Seção Relatório
+   ========================== */
 
 #relatorio {
     padding: 4rem 0;
-    background-color: white; /* Cor de fundo clara */
+    background-color: white;
 }
 
-#relatorio .row{
-    padding-top:2rem;
+#relatorio .row {
+    padding-top: 2rem;
 }
 
-#relatorio .company-name{
+#relatorio .company-name {
     color: #f9a43f;
     font-size: 4rem;
     font-weight: lighter;
 }
 
-/* Estilo para a seção de desempenho */
+/* ==========================
+   Seção Desempenho
+   ========================== */
 
 #desempenho .card {
-    border-radius: 8px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem 1.5rem;
 }
 
 #desempenho .card-body h1 {
     font-size: 6rem;
-    font-weight: bold;
+    font-weight: 900;
+    letter-spacing: -3px;
     margin-bottom: 2rem 0;
 }
+
+#desempenho .card-body h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem 0;
+}
+
 
 #desempenho .card-body p {
     font-size: 1.25rem;
 }
 
-.emissao-carbono .card-body h1{
+.emissao-carbono .card-body h1 {
     font-size: 3rem;
     font-weight: 900;
     color: black;
 }
 
-/* Estilo para a faixa de maturidade */
+.emissao-carbono .card-body h5 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: gray;
+}
+
+
+@media (max-width: 768px){
+    #desempenho .card-body h1 {
+        font-size: 4rem;
+        letter-spacing: -1px;
+        margin-bottom: 1rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    #desempenho .card-body h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem 0;
+    }
+}
+
+/* ==========================
+   Seção Faixa de Maturidade
+   ========================== */
 
 #faixas-maturidade {
     padding-bottom: 2rem;
@@ -307,7 +530,7 @@ i.fa-industry{
 }
 
 .faixa-maturidade.faixa-padrao {
-    background-color: #f1f1f1; /* Cor de fundo padrão */
+    background-color: #f1f1f1;
     margin-left: 1rem;
 }
 
@@ -316,23 +539,23 @@ i.fa-industry{
 }
 
 .faixa-maturidade.faixa-atual.iniciante {
-    background-color: #f8d7da; /* Cor de fundo para faixa iniciante */
+    background-color: #f8d7da;
 }
 
 .faixa-maturidade.faixa-atual.em-desenvolvimento {
-    background-color: #fff3cd; /* Cor de fundo para faixa em desenvolvimento */
+    background-color: #fff3cd;
 }
 
 .faixa-maturidade.faixa-atual.engajada {
-    background-color: #d1ecf1; /* Cor de fundo para faixa engajada */
+    background-color: #d1ecf1;
 }
 
 .faixa-maturidade.faixa-atual.sustentavel {
-    background-color: #d4edda; /* Cor de fundo para faixa sustentável */
+    background-color: #d4edda;
 }
 
 .faixa-maturidade.faixa-atual.referencia {
-    background-color: #c3e6cb; /* Cor de fundo para faixa referência */
+    background-color: #c3e6cb;
 }
 
 #faixas-maturidade h3 {
@@ -344,67 +567,56 @@ i.fa-industry{
     font-weight: bold;
 }
 
-/* SEÇÃO DE DIMENSÕES E TEMAS */
+/* ==========================
+   Seção Dimensões e Temas
+   ========================== */
 
-.chart-container {
-    position: relative;
-    margin-right: 40px;
-}
-
-.dimensoes-esg{
+.dimensoes-esg {
     margin-top: 3rem;
 }
 
-.dimensoes-esg h3, .dimensoes-esg h4{
+.dimensoes-esg h3, .dimensoes-esg h4 {
     margin-bottom: 1rem;
 }
 
-.dimensoes-esg h4{
-    margin-top: 2rem;
+.dimensoes-esg h4 {
+    margin-top: 1rem;
 }
 
-.dimensoes-esg h6{
+.dimensoes-esg h6 {
     font-size: 1.5rem;
     font-weight: bold;
-    margin: 2rem 0 0.5rem;
+    margin: 1rem 0 0.5rem;
 }
 
-.respostas-detalhes .dimensoes-esg ul li{
-    margin-bottom: 1rem;
-}
-
-
-/* ODS */
-.thermometer-container {
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: center; /* Centraliza horizontalmente se necessário */
-    height: 100%;
-}
-
-.thermometer {
-    width: 100%;
-    background-color: #f0f0f0;
-    height: 20px;
-    position: relative;
-    margin: 0 10px; /* Adicione alguma margem lateral, se necessário */
-}
-
-.thermometer-bar {
-    height: 100%;
-    background-color: #4caf50;
-}
-
-.ods-respostas p, .agenda-2030 p{
-    font-size: 1rem;
-    margin: 0;
-}
-
-.ods-images {
+.dimensoes-esg .card-body{
+    padding: 2rem;
     margin-bottom: 2rem;
 }
 
-/* Estilo para lista de certificações */
+.respostas-detalhes .dimensoes-esg ul li {
+    margin-bottom: 1rem;
+}
+
+.dimensoes-cards .card-body{
+    padding: 2rem;
+}
+
+.dimensoes-cards h2 {
+    margin: 0;
+}
+
+.dimensoes-cards h5 {
+    margin: 0;
+}
+
+.label-grafico {
+    font-size: 1rem;
+}
+
+/* ==========================
+   Seção de Respostas
+   ========================== */
 
 .respostas {
     background-color: #efefef;
@@ -413,29 +625,29 @@ i.fa-industry{
     padding-bottom: 4rem;
 }
 
-.respostas .container{
+.respostas .container {
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .respostas .container, .respostas-detalhes.container {
     padding: 3rem;
 }
 
-.respostas .container h2{
+.respostas .container h2 {
     margin-top: 1rem;
 }
 
-.respostas-destaque p.info{
+.respostas-destaque p.info {
     margin-bottom: 2rem;
 }
 
-.respostas-destaque.container{
+.respostas-destaque.container {
     border-bottom: 4px dotted #cecece;
     border-radius: 1rem 1rem 0 0;
 }
 
-.respostas-detalhes.container{
+.respostas-detalhes.container {
     margin-top: 0;
     border-radius: 0 0 1rem 1rem;
 }
@@ -444,26 +656,26 @@ i.fa-industry{
     margin-top: 0;
 }
 
-.respostas-detalhes ul{
-    list-style-type: none; /* Remove o marcador da lista */
+.respostas-detalhes ul {
+    list-style-type: none;
     padding-left: 0;
 }
 
 .respostas-detalhes ul li {
     margin-bottom: 0;
-    display: flex; /* Usa flexbox para alinhar os ícones e o texto */
-    align-items: flex-start; /* Alinha os itens ao topo */
+    display: flex;
+    align-items: flex-start;
 }
 
 .respostas-detalhes ul li i {
     line-height: 1.5;
-    margin-right: 0.5rem; /* Espaçamento entre o ícone e o texto */
+    margin-right: 0.5rem;
 }
 
 .respostas-detalhes ul li span {
-    flex: 1; /* Permite que o texto ocupe o espaço restante */
-    text-align: left; /* Garante que o texto fique alinhado à esquerda */
-    word-wrap: break-word; /* Quebra o texto longo para evitar overflow */
+    flex: 1;
+    text-align: left;
+    word-wrap: break-word;
 }
 
 p.certificacoes-perguntas {
@@ -472,15 +684,50 @@ p.certificacoes-perguntas {
     margin: 2rem 0 0.5rem;
 }
 
-/* Estilo para as tabelas */
+@media (max-width: 768px){
+    .respostas {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }    
+    .respostas .container, .respostas-detalhes.container {
+        padding: 2rem;
+    }
+    p.certificacoes-perguntas {
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin: 2rem 0 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .respostas {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }    
+    .respostas .container, .respostas-detalhes.container {
+        padding: 1.5rem;
+    }
+    p.certificacoes-perguntas {
+        font-weight: bold;
+        font-size: 1.25rem;
+        margin: 1.5rem 0 0.5rem;
+    }
+}
+
+
+/* ==========================
+   Estilos para Tabelas
+   ========================== */
+
 .table {
     width: 100%;
     margin-bottom: 1rem;
     color: #212529;
 }
 
-.table th,
-.table td {
+.table th, .table td {
     padding: 0.75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
@@ -490,8 +737,7 @@ p.certificacoes-perguntas {
     border: 1px solid #dee2e6;
 }
 
-.table-bordered th,
-.table-bordered td {
+.table-bordered th, .table-bordered td {
     border: 1px solid #dee2e6;
 }
 
@@ -503,10 +749,9 @@ p.certificacoes-perguntas {
     background-color: #f0f0f0;
 }
 
-/* Estilo para o relatório */
-.container {
-    margin-top: 20px;
-}
+/* ==========================
+   Outros Estilos Específicos
+   ========================== */
 
 .border {
     border: 1px solid #dee2e6;
@@ -517,8 +762,99 @@ p.certificacoes-perguntas {
     margin-bottom: 1rem;
 }
 
+.thermometer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 1rem;
+}
 
-/* Estilos para impressão */
+.thermometer {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 20px;
+    position: relative;
+    margin: 0 10px;
+}
+
+.thermometer-bar {
+    height: 100%;
+    background-color: #4caf50;
+}
+
+.ods-respostas p, .agenda-2030 p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.ods-images {
+    margin-bottom: 2rem;
+}
+
+.scale-container {
+    margin: 1rem 1rem 2rem;
+}
+
+.scale-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.5em;
+    margin-bottom: 5px;
+}
+
+.scale-label-left {
+    text-align: left;
+}
+
+.scale-label-right {
+    text-align: right;
+}
+
+.scale-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+.scale-segment {
+    width: 20%;
+    height: 2rem;
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    margin: 0 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.progress-bar-horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 1rem 0 2rem;
+}
+
+.progress-segment {
+    flex: 1;
+    height: 2rem;
+    margin: 0 2px;
+    background-color: lightgray;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.progress-segment.filled {
+    background-color: green;
+}
+
+/* ==========================
+   Estilos para Impressão
+   ========================== */
+
 @page {
     size: A4;
     margin: 20mm;
@@ -530,13 +866,83 @@ p.certificacoes-perguntas {
 
 @media print {
     h1, h2, h3, h4, h5, h6 {
-        page-break-after: avoid;
+        /* page-break-after: avoid; */
     }
     p {
         orphans: 3;
         widows: 3;
     }
     table, pre {
-        page-break-inside: avoid;
+        /* page-break-inside: avoid; */
+    }
+}
+
+@media print {
+    /* Ocultar elementos irrelevantes para impressão */
+    nav, .voltar-indice, footer, .indice, .navbar {
+        display: none !important;
+    }
+
+    /* Ajustar o corpo para a página de impressão */
+    body {
+        font-size: 12pt;  /* Tamanho adequado para impressão */
+        line-height: 1.6; /* Espaçamento para legibilidade */
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: 100%; /* Ocupa toda a largura da página */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Configurar quebras de página para evitar cortes */
+    h2, h3 {
+        /* page-break-before: always; */
+    }
+
+    p, ul, table {
+        /* page-break-inside: avoid;  */
+    }
+
+    .card {
+        /* page-break-inside: avoid; */
+        /* margin-bottom: 10mm; */
+    }
+
+    /* Ajustar tabelas para não serem cortadas */
+    table {
+        width: 100%; /* Usar toda a largura disponível */
+        border-collapse: collapse;
+    }
+
+    th, td {
+        border: 1px solid #dee2e6;
+        padding: 8px;
+    }
+
+    /* Exibir apenas conteúdo essencial */
+    .hero, .esg-letters {
+        display: none; /* Ocultar imagens de fundo e visuais pesados */
+    }
+
+    /* Ajuste de cabeçalho para primeira página */
+    @page {
+        size: A4;
+        margin: 20mm;
+    }
+
+    /* Estilo opcional para a primeira página */
+    @page :first {
+        margin-top: 30mm; /* Espaço extra na primeira página */
+    }
+
+    /* Numeração de páginas */
+    footer::after {
+        content: "Página " counter(page);
+        position: absolute;
+        bottom: 10mm;
+        right: 10mm;
     }
 }
