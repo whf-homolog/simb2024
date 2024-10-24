@@ -154,6 +154,21 @@ h5.relatorio-indice {
     margin-top: 0;
 }
 
+.respostas .container.menu{
+    padding: 0;
+    /* margin-bottom: 30px; */
+    background-color: transparent;
+    box-shadow: none; 
+}
+
+.respostas .nav-tabs{
+    border-bottom: none;
+}
+
+.respostas.dash{
+    margin-top:0;
+}
+
 /* Ajustes de Responsividade para NAVBAR */
 @media (max-width: 768px) {
     .navbar {
@@ -208,7 +223,7 @@ h5.relatorio-indice {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.hero.hero-ods {
+.hero.hero-ods{
     background: url('../../../../assets/img/onu_bg.jpg') no-repeat center center/cover;
 }
 
@@ -269,6 +284,23 @@ h5.relatorio-indice {
     color: #f9a43f;
     font-size: 4rem; /* Tamanho grande para desktop */
     font-weight: lighter;
+}
+
+.respostas .container.hero-top {
+    padding: 0 2rem;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.respostas .container.hero-top h1 {
+    font-size: 4rem; 
+    font-weight: bold;
+    line-height: 1;
+}
+
+.respostas .hero{
+    padding: 4rem 0;
+    margin-bottom: 4rem;
 }
 
 /* Ajustes de Responsividade para HERO */
@@ -678,10 +710,22 @@ footer img {
     word-wrap: break-word;
 }
 
+.respostas-detalhes .content{
+    /* margin-bottom: 60px; */
+}
+
+.respostas-detalhes .content h1{
+    font-weight: 900;
+}
+
 p.certificacoes-perguntas {
     font-weight: bold;
     font-size: 1.5rem;
     margin: 2rem 0 0.5rem;
+}
+
+h4.demografico {
+    margin-top: 3rem;
 }
 
 @media (max-width: 768px){
