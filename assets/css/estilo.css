@@ -216,7 +216,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-esg {
-    background: url('../../../../assets/img/forest_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/forest_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-esg::before {
@@ -224,7 +224,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-ods{
-    background: url('../../../../assets/img/onu_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/onu_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-ods::before{
@@ -232,7 +232,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-certificacoes {
-    background: url('../../../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/certificacoes_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-certificacoes::before{
@@ -240,7 +240,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-gee{
-    background: url('../../../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
+    background: url('../../assets/img/gee_bg.jpg') no-repeat center center/cover;  
 }
 
 .hero.hero-gee::before{
@@ -248,7 +248,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-relatorios{
-    background: url('../../../../assets/img/index_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/index_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-relatorios::before {
@@ -256,7 +256,7 @@ h5.relatorio-indice {
 }
 
 .hero.hero-dashboard{
-    background: url('../../../../assets/img/dashboard_bg.jpg') no-repeat center center/cover;
+    background: url('../../assets/img/dashboard_bg.jpg') no-repeat center center/cover;
 }
 
 .hero.hero-dashboard::before {
